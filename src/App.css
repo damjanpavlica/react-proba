@@ -1,7 +1,8 @@
 .App {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 140px auto 40px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .header,
@@ -10,4 +11,9 @@
   background-color: brown;
   overflow: auto;
   color: #ffffff;
+  grid-column: 1 / -1;
+}
+
+main {
+  grid-column: 4 / 10;
 }
